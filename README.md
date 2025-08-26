@@ -41,15 +41,12 @@ BART‑base fine‑tune → LP text (objective + constraints)
 LLM-Project/
 ├─ NER/                 # NER training/eval notebooks & helpers (XLM-RoBERTa)
 ├─ BART/                # BART training/eval/inference notebooks
-├─ fine_tuned_bart/     # (optional) saved checkpoints / runs
-├─ DATA/                # raw/processed data (keep out of git; add README here)
+├─ fine_tuned_bart/     # saved checkpoints / runs
+├─ DATA/                # raw/processed data
 ├─ .gitignore
 ├─ .gitattributes
 └─ README.md
 ```
-
-> Tip: keep large artifacts and the full dataset out of git; leave `DATA/` with a short README on where/how to download.
-
 ---
 
 ## Quick Start
