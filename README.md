@@ -11,10 +11,10 @@ Turn plain natural-language optimization problems into structured linear‑progr
 
 ## Overview
 
-This repository addresses the gap between plain-English optimization statements and formal linear programs (LPs). 
-It implements a two-stage pipeline: an XLM-RoBERTa NER model first tags variables, quantities, bounds, and comparators; a BART seq2seq model then generates a canonical LP (objective + constraints) from the tagged text. Trained on NL4Opt-style data (CoNLL for NER, JSONL for generation), the goal is simple: given a short problem description, output a ready-to-solve LP. 
-Early results show strong recall on numeric values and inequality directions, with most errors in variable naming and occasional missing/swapped terms—guiding next steps like standardized variable schemas, structure-aware losses, and a lightweight LP validator. 
-The repo includes clean data layout, reproducible training notebooks, and an end-to-end inference demo.
+This repository addresses the gap between plain-English optimization statements and formal linear programs (LPs). /n
+It implements a two-stage pipeline: an XLM-RoBERTa NER model first tags variables, quantities, bounds, and comparators; a BART seq2seq model then generates a canonical LP (objective + constraints) from the tagged text. Trained on NL4Opt-style data (CoNLL for NER, JSONL for generation), the goal is simple: given a short problem description, output a ready-to-solve LP. /n
+Early results show strong recall on numeric values and inequality directions, with most errors in variable naming and occasional missing/swapped terms—guiding next steps like standardized variable schemas, structure-aware losses, and a lightweight LP validator. /n
+The repo includes clean data layout, reproducible training notebooks, and an end-to-end inference demo. /n
 
 This repository demonstrates an end‑to‑end workflow that:
 
